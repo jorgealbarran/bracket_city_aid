@@ -1,0 +1,85 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdfdfd;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    width: 400px;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #E53935; /* The Atlantic Red */
+}
+
+
+
+#game-container {
+    display: none;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    min-height: 200px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.bracket-group {
+    cursor: pointer;
+}
+
+.bracket-group > b {
+    font-weight: bold;
+}
+
+.bracket-content.highlight {
+    background-color: #BBDEFB; /* Lighter Blue */
+}
+
+.guessed {
+    cursor: pointer;
+}
+
+.guessed.has-unguessed {
+    color: #D32F2F; /* Red */
+    font-style: italic;
+}
+
+.guessed.all-guessed {
+    color: #1976D2; /* Blue */
+}
+
+#go-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #E53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#go-button:hover {
+    background-color: #D32F2F;
+}
+
+#undo-button {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #E53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#undo-button:hover {
+    background-color: #D32F2F;
+}

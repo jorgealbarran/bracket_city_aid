@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Bracket City Aid",
+    "version": "1.0",
+    "description": "Enhances The Atlantic's Bracket City game by allowing you to input and track your guesses directly in a side panel.",
+    "action": {
+        "default_title": "Click to open side panel"
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "side_panel": {
+        "default_path": "index.html"
+    },
+    "permissions": [
+        "sidePanel",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.theatlantic.com/games/bracket-city/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
