@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // Find the start of the puzzle text (after the date and arrow)
-                const startIndex = cleanedHtmlText.indexOf('→');
-                let puzzleText = startIndex !== -1 ? cleanedHtmlText.substring(startIndex + 1) : cleanedHtmlText;
+                const startIndex = cleanedHtmlText.indexOf('SOLVED!');
+                let puzzleText = startIndex !== -1 ? cleanedHtmlText.substring(startIndex + 7) : cleanedHtmlText;
 
                 // Replace special dash characters (like em-dashes) with a space, but keep underscores
                 const finalCleanedText = puzzleText.replace(/[\u2014\u2013\u2015]/g, ' ');
